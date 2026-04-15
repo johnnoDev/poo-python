@@ -1,0 +1,32 @@
+🚗 Ejercicio: Sistema de Gestión de Concesionaria
+# El Problema
+# La concesionaria maneja distintos tipos de vehículos, pero todos comparten ciertas características (marca, modelo y precio). Tu tarea es crear una estructura de clases que optimice el código y permita calcular impuestos específicos según el tipo de vehículo.
+
+# Instrucciones
+# Crea una Clase Base llamada Vehiculo:
+
+# Atributos: marca, modelo y precio_base.
+
+# Método: obtener_info() que devuelva una cadena con los datos básicos del vehículo.
+
+# Crea una Clase Hija llamada Auto:
+
+# Atributo específico: puertas (int).
+
+# Hereda de Vehiculo usando super().__init__.
+
+# Método: calcular_impuesto(). El impuesto para los autos es del 10% sobre el precio_base.
+
+# Crea una Clase Hija llamada Moto:
+
+# Atributo específico: cilindrada (int).
+
+# Hereda de Vehiculo usando super().__init__.
+
+# Método: calcular_impuesto(). El impuesto para las motos es del 5% sobre el precio_base.
+
+# Objetivo Final:
+
+# Instancia un Auto (ej. Toyota Corolla, $25,000, 4 puertas) y una Moto (ej. Yamaha R6, $12,000, 600cc).
+
+# Muestra la información de cada uno y el precio final (precio base + impuesto).
