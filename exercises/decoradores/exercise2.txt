@@ -1,0 +1,12 @@
+🟢 Nivel 2 — Decorador para medir ejecución
+
+Objetivo: usar decoradores en métodos reales
+
+👉 Crea una clase Calculadora con método sumar(a, b)
+👉 Crea un decorador que:
+
+mida cuánto tarda en ejecutarse el método
+imprima el tiempo
+
+💡 Pista:
+usa time.time()
