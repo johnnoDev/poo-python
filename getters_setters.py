@@ -12,8 +12,8 @@ class Persona:
         return nuevo_nombre
 
 
-johnny = Persona('Johnny')
-print(johnny.get_nombre())
+# johnny = Persona('Johnny')
+# print(johnny.get_nombre())
 
-caiza = Persona('Caiza')
-print(caiza.set_nombre('Zaulo'))
+# caiza = Persona('Caiza')
+# print(caiza.set_nombre('Zaulo'))

@@ -1,0 +1,17 @@
+🧠 EJERCICIOS DE DECORADORES + POO
+🟢 Nivel 1 — Decorador básico en método
+
+Objetivo: entender cómo aplicar decoradores a métodos de una clase
+
+👉 Crea una clase Saludo con un método decir_hola(nombre)
+👉 Haz un decorador que imprima:
+
+"Antes del saludo"
+ejecuta el método
+"Después del saludo"
+
+💡 Ejemplo esperado:
+
+Antes del saludo
+Hola Juan
+Después del saludo
