@@ -12,4 +12,6 @@ class Pato(Volador, Nadador):
 
 mi_pato = Pato()
 mi_pato.mover()
-print(Pato.mro())
+# print(Pato.mro())
+
+# MRO
