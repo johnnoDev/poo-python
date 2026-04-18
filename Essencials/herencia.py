@@ -1,58 +1,22 @@
-"""
-EJERCICIO DE PROGRAMACIÓN ORIENTADA A OBJETOS: HERENCIA EN PYTHON
-
-OBJETIVO:
-Implementar un sistema básico de gestión de personas utilizando el concepto 
-de herencia para reutilizar código y establecer jerarquías entre clases.
-
-REQUERIMIENTOS:
-1. Clase Base (Persona): 
-   - Debe tener los atributos: nombre, edad y nacionalidad.
-   - Debe incluir un método llamado 'hablar' que imprima un mensaje por consola.
-
-2. Clases Hijas (Herencia):
-   - Empleado: Hereda de Persona. Añade los atributos específicos 'trabajo' 
-     y 'salario'.
-   - Estudiante: Hereda de Persona. Añade los atributos específicos 'notas' 
-     y 'universidad'.
-   
-3. Implementación:
-   - Utilizar el método super().__init__() en las clases hijas para inicializar 
-     los atributos heredados de la clase padre.
-   - Realizar una instancia de la clase Empleado con datos de prueba.
-"""
-
-
 class Persona:
-    def __init__(self, nombre, edad, nacionalidad):
+    def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
-        self.nacionalidad = nacionalidad
     
-    def hablar(self):
-        return 'Hablando...'
-
-# Herencia
-class Empleado(Persona):
-    def __init__(self, nombre, edad, nacionalidad, trabajo, salario):
-        super().__init__(nombre, edad, nacionalidad)
-        self.trabajo = trabajo
-        self.salario = salario
+    def imprimir_informacion(self):
+        return f"""Datos de la persona: \n{self.nombre}\n{self.edad}
+        """
 
 class Estudiante(Persona):
-    def __init__(self, nombre, edad, nacionalidad, notas, universidad):
-        super().__init__(nombre, edad, nacionalidad)
-        self.notas = notas
-        self.universidad = universidad
+    def __init__(self, nombre, edad, grado):
+        super().__init__(nombre, edad)
+        self.grado = grado
 
-empleado1 = Empleado('Juan', 25, 'Ecuatoriano', 'DBA', 10000)
-
-print(f"""DATOS DEL EMPLEADO \n \n
-    Nombre: {empleado1.nombre}\n
-    Edad: {empleado1.edad}\n
-    Nacionalidad: {empleado1.nacionalidad}\n
-    Notas: {empleado1.trabajo}\n
-    Universidad: {empleado1.salario}
-""")
+    def imprimir_grado(self):
+        return f'El estudiante está en el siguiente grado: {self.grado}'
 
 
+estudiante1 = Estudiante('Jonathan', 20, '10mo')
+
+print(estudiante1.imprimir_informacion())
+print(estudiante1.imprimir_grado())
